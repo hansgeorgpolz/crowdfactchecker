@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="display_results.css">
+    <title>ERROR</title>
+</head>
+<body>
+<h1 id="headline"></h1>
+<h2>Checking the following urls:</h2>
+<ul id="urls" style="list-style-type: none"></ul>
+<h2>Statistics:</h2>
+<h3>GerOIE status:</h3>
+<p id="status"></p>
+<h3>Subject, Object, Relation:</h3>
+<p id="sor"></p>
+<h3>Valid tuples found:</h3>
+<p id="total"></p>
+<h3>Matches:</h3>
+<p id="relevant"></p>
+<h2>Evaluation:</h2>
+<p id="eval"></p>
+<h2>Histogram</h2>
+<p>
+    <button type="button" id="btnHist">Create histogram</button>
+</p>
+<div id="hist">
+    <p>
+        <h2>Top 15 facts:</h2>
+        <canvas id="canvas"></canvas>
+    </p>
+    <p>
+        <h2>All Results:</h2>
+        <table id="results_table"></table>
+    </p>
+</div>
+<script src="display_results.js"></script>
+</body>
+</html>
